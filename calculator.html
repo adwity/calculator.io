@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <div id="inputDisplayContainer" class="inputScreen"></div>
+        <div id="outputDisplayContainer" class="outputScreen"></div>
+        <div class="grid-container">
+            <button id="clear" class="itemClear" onclick="clearInput()">AC</button>
+            <button id="divide" class="itemDivide" onclick="buildExpression('/')">/</button>
+            <button id="multiply" class="itemMultiply" onclick="buildExpression('*')">X</button>
+            <button id="seven" class="item7" onclick="buildExpression('7')">7</button>
+            <button id="eight" class="item8" onclick="buildExpression('8')">8</button>
+            <button id="nine" class="item9" onclick="buildExpression('9')">9</button>
+            <button id="subtract" class="itemSubtract" onclick="buildExpression('-')">-</button>
+            <button id="four" class="item4" onclick="buildExpression('4')">4</button>
+            <button id="five" class="item5" onclick="buildExpression('5')">5</button>
+            <button id="six" class="item6" onclick="buildExpression('6')">6</button>
+            <button id="add" class="itemAdd" onclick="buildExpression('+')">+</button>
+            <button id="one" class="item1" onclick="buildExpression('1')">1</button>
+            <button id="two" class="item2" onclick="buildExpression('2')">2</button>
+            <button id="three" class="item3" onclick="buildExpression('3')">3</button>
+            <button id="equals" class="itemEquals" onclick="calculateResult()">=</button>
+            <button id="zero" class="item0" onclick="buildExpression('0')">0</button>
+            <button id="decimal" class="itemDecimal" onclick="buildExpression('.')">.</button>
+        </div>
+    </div>
+</body>
+
+</html>

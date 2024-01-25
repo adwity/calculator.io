@@ -1,0 +1,165 @@
+html {
+    font-family: digital;
+}
+
+
+.calculator {
+    border: 2px solid #47476b;
+    padding: 5px;
+    background: black;
+    width: 320px;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "clearArea clearArea divArea multArea"
+        "seven eight nine subArea"
+        "four five six addArea"
+        "one two three equalArea"
+        "zer0 zer0 decArea equalArea";
+    justify-items: center;
+
+}
+
+.grid-container>div {
+    background-color: grey;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.itemClear {
+    grid-area: clearArea;
+    background: rgb(172, 57, 57);
+    width: 100%;
+}
+
+.itemDivide {
+    grid-area: divArea;
+    background: rgb(102, 102, 102);
+}
+
+.itemMultiply {
+    grid-area: multArea;
+    background: rgb(102, 102, 102);
+}
+
+.item7 {
+    grid-area: seven;
+    background: #4d4d4d;
+}
+
+.item8 {
+    grid-area: eight;
+    background: #4d4d4d;
+}
+
+
+.item9 {
+    grid-area: nine;
+    background: #4d4d4d;
+}
+
+
+.itemSubtract {
+    grid-area: subArea;
+    background: rgb(102, 102, 102);
+}
+
+.item4 {
+    grid-area: four;
+    background: #4d4d4d;
+}
+
+.item5 {
+    grid-area: five;
+    background: #4d4d4d;
+}
+
+.item6 {
+    grid-area: six;
+    background: #4d4d4d;
+}
+
+.itemAdd {
+    grid-area: addArea;
+    background: rgb(102, 102, 102);
+}
+
+.item1 {
+    grid-area: one;
+    background: #4d4d4d;
+}
+
+.item2 {
+    grid-area: two;
+    background: #4d4d4d;
+}
+
+.item3 {
+    grid-area: three;
+    background: #4d4d4d;
+}
+
+.itemEquals {
+    grid-area: equalArea;
+    background: rgb(0, 68, 102);
+    height: 100%;
+}
+
+.item0 {
+    grid-area: zer0;
+    background: #4d4d4d;
+    width: 100%;
+}
+
+.itemDecimal {
+    grid-area: decArea;
+    background: #4d4d4d;
+}
+
+.inputScreen {
+    min-height: 30px;
+    font-family: digital;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.outputScreen {
+    min-height: 30px;
+    font-family: digital;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+button {
+    position: relative;
+    height: 65px;
+    width: 80px;
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    background: #4d4d4d;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    cursor: default;
+}
+
+button:hover {
+    color: black;
+    outline: 0.05em solid grey;
+    z-index: 3;
+}
